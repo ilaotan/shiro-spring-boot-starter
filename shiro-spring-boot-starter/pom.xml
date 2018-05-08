@@ -25,7 +25,7 @@
         <dependency>
             <groupId>cn.ocoop.framework</groupId>
             <artifactId>shiro-spring-boot-autoconfigure</artifactId>
-            <version>1.0</version>
+            <version>${parent.version}</version>
         </dependency>
     </dependencies>
 
