@@ -51,10 +51,10 @@ public class ShiroAutoConfiguration {
 
     @Bean
     @ConditionalOnMissingBean(FilterRegistrationBean.class)
-    public FilterRegistrationBean filterRegistrationBean(ShiroFilterFactoryBean shiroFilterFactoryBean) throws Exception {
+    public FilterRegistrationBean filterRegistrationBean(ShiroFilterFactoryBean shiroFilter) throws Exception {
         FilterRegistrationBean filterRegistration = new FilterRegistrationBean();
         filterRegistration.addInitParameter("targetFilterLifecycle", "true");
-        filterRegistration.setFilter((Filter) shiroFilterFactoryBean.getObject());
+        filterRegistration.setFilter((Filter) shiroFilter.getObject());
         filterRegistration.setEnabled(true);
         filterRegistration.addUrlPatterns("/*");
         return filterRegistration;

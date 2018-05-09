@@ -1,2 +1,3 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.ocoop.framework.ConverterAutoConfiguration,\
 cn.ocoop.framework.ShiroAutoConfiguration
