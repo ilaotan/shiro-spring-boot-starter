@@ -16,7 +16,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-@Component
+//@Component
 @ConfigurationPropertiesBinding
 public class String2ObjectGenericConverter implements GenericConverter {
 
